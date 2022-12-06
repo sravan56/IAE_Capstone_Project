@@ -1,0 +1,61 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: arial;
+    background:whitesmoke;
+}
+.adoption{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100vh;
+    animation: animate 10s ease-in-out infinite;
+   background-size: cover;
+}
+
+h1{
+    text-align:center;
+    font-size: xx-large;
+    font-family: Georgia, Verdana, sans-serif;
+}
+h2{
+    text-align:center;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+h3{
+    font-family: Trebuchet MS;
+    font-size:larger;
+    margin-left:15%;
+}
+.adoption p{
+    text-align: left;
+    padding-left: 20px;
+    padding-right:20px;
+    font-family: Trebuchet MS;
+    font-size: larger;
+    float:left;
+}
+@keyframes animate{
+    0%,100%{
+        background-image: url("https://media.gettyimages.com/photos/close-up-of-toddler-holding-hand-with-parents-picture-id1267462698?k=6&m=1267462698&s=612x612&w=0&h=pyIU8EHK4boDQD2uSRbit449Fl2HZJHiNfskV0bOSKw=");
+    }
+    25%{
+        background-image: url("https://media.gettyimages.com/photos/adult-and-child-hands-holding-red-heart-health-care-donate-and-family-picture-id1178291191?k=6&m=1178291191&s=612x612&w=0&h=X1Wnabi-MPfjwpXiSD9NbPBGqU4GxPqTayArZ0LaH-U=");
+    }
+    50%{
+        background-image: url("https://media.gettyimages.com/photos/holding-baby-hand-picture-id992942506?k=6&m=992942506&s=612x612&w=0&h=dIj-DBRJpIwpoamncSJuiFB5ASFWTZiMdXHd5RpRpZ8=");
+       color:black;
+    }
+    75%{
+        background-image: url("https://media.gettyimages.com/photos/cropped-image-of-children-with-hands-clasped-by-toy-blocks-on-table-picture-id1250002013?k=6&m=1250002013&s=612x612&w=0&h=u-GEd48Nvsb5mSAq-q2zWXUlgg9mQUaHmY2XVnCDQmQ=");
+       color:whitesmoke;
+    }
+}
+@media screen and (max-width:750px){
+    .adoption{
+      width:100%;
+    }
+    
+  }
+  

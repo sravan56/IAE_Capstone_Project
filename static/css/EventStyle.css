@@ -1,0 +1,207 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.banner{
+	height: 700px;
+	width: 100%;
+	background-image: url("https://images.pexels.com/photos/713644/pexels-photo-713644.jpeg?auto=compress&cs=tinysrgb&h=9000&w=9000");
+	background-position: center;
+	background-size: cover;
+	font-family: sans-serif;
+	
+
+}
+.navbar{
+	width: 81%;
+	margin: auto;
+	padding : 35px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-decoration: none;
+}
+.logo{
+	height: 100;
+	width: 100;
+	background-color: white;
+	cursor: pointer;
+	margin-top: 13px;
+}
+.logo img:hover{
+	opacity: 1.5;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	margin-top: 14px;
+	position: relative; 
+	text-decoration: none;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 4px;
+	width: 0;
+	text-decoration: none;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover:after{
+	width: 100%;
+}
+.content1{
+	width: 100%;
+	position: absolute;
+	top : 50%;
+	transform: translateY(-50);
+	text-align: center;
+	font-family: Monaco;
+	color: #fff;
+}
+.content1 h1{
+	font-size: 50px;
+	margin-top: -120px;
+}
+.content1 p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 30px;
+	font-size: 20px;
+}
+.more{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 30px;
+	font-size: 20px;
+}
+.new{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 30px;
+	font-size: 20px;
+}
+.button a{
+	width:100%;
+	padding: 15px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid #009688;
+	background: teal;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	margin-top: 20px;
+	text-decoration: none;
+	 
+	}
+	.button{
+		width: 100%;
+		text-align: center;
+	}
+.new ul a{
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+	
+}	
+
+ 
+.button a:hover span{
+	width: 100%;
+}
+.button a:hover{
+	border: none;
+}
+.more:after{
+	content: "";
+	clear:both;
+	display: table;
+
+}
+.banner:after{
+	content: "";
+	clear:both;
+	display: table;
+
+}
+footer{
+   
+	bottom:0px;
+	width:100%;
+	height:300px;
+	background: GhostWhite;
+  }
+  .conte{
+	font-family: sans-serif;
+	margin-top: 2%;
+  }
+  .left-box{
+   width:70%;
+ margin-left: 2%;
+height:300px;
+float:left;
+font-size: larger;
+margin-top: 2%;
+font-family: sans-serif;
+
+  }
+  .Address-box{
+	  width:23%;
+	  margin-right:3%;
+	  margin-left:3% ;
+	  height:300px;
+	  float:right;
+	  font-size: larger;
+	  margin-top: 2%;
+	  font-family: sans-serif;
+  }
+  .main-content{
+	display: flex;
+  }
+
+ .left-box h2{
+   color:black;
+ }
+ .Address-box h2{
+   margin-top: 2%;
+   color:black;
+ }
+ .social a{
+	height:40px;
+	width:40px;
+	background: black;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	border:none;
+	padding: 0;
+	
+ }
+  .left-box .conte .social a span{
+	height:40px;
+	width:40px;
+	margin-top: 5%;
+	background: black;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	transition: 0.3s;
+
+  }
+  .left-box .conte .social a span:hover{
+	background: tomato;
+  }

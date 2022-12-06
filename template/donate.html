@@ -1,0 +1,296 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>.header{
+        padding-top: 250px;
+        width: 100%;
+        height: 720px;
+        background-image: url(bad.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        text-align: center;
+    }
+    .cautn{
+        background-color: #F9FAFC;
+
+    }
+    .heading{
+        text-align: center;
+    }
+    .matter h2 span,.matter h3 span{
+        top: 20px;
+        margin-top: 25px;
+        padding:10px; 
+        font-size: 50px;
+        text-align: center;
+        background-color: rgba(0,0,0,0.5);
+        
+        color: #fff;	
+    }
+    .cont{
+        margin: 30px;
+        
+        align-items: center;
+        transition: 0.5s ease;
+        
+    }
+    .cont img{
+        width: 355px;
+        height: 317px;
+        float: right;
+        
+        box-shadow: gray 0px 5px 40px;
+        margin: 18px 20px 18px 20px;
+    }
+    .contnt p{
+        font-size: 25px;
+        
+        line-height: 1.8;
+        padding: 15px 15px 15px 25px;
+    }
+    button{
+        width: 300px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 35%;
+        border-radius: 10px;
+        border: 2px solid #fdbb00;
+        background-color: #fdbb00;
+        color: #000;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        outline: none;
+        transition: 0.5s ease;
+    }
+    footer{
+    
+       
+    
+            
+            width:100%;
+    
+            height: 410px;
+    
+            background-color: #000000ab; 
+            color: #fff;
+          }
+    
+          .left-box{
+    
+           width:60%;
+    
+         margin-left: 1%;
+    
+      
+    
+        float:left;
+    
+        font-size: larger;
+    
+     
+    
+          }
+    
+          .right-box{
+    
+              width:28%;
+             
+              margin-right:1%;
+              margin-left: 5%;
+              
+    
+              float:right;
+    
+              font-size: larger;
+    
+          }
+    
+          .main-content{
+    
+            display: flex;
+    
+          }
+    
+      
+    
+         .left-box h2{
+             margin: 10px;
+           color:#fff;
+    
+         }
+    
+         .right-box h2{
+                 margin: 10px;
+           color:#fff;
+    
+         }
+         .hline{
+        margin:0 200px 0 200px;
+    }
+         .soc-media{
+        text-align: center;
+    }
+    .soc-media ul{
+        position: absolute;
+        
+        padding: 0;
+    
+        display: flex;
+        margin-left: 35%;
+    }
+    .soc-media ul li{
+        list-style: none;
+        margin: 0 15px;
+    
+    }
+    .soc-media ul li .fa{
+        font-size: 25px;
+        line-height: 60px;
+        transition: .5s;
+        color: #fff;
+    }
+    .soc-media ul li .fa:hover{
+        color: #fff;
+    }
+    .soc-media ul li a{
+        position: relative;
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #32cd32;
+        text-align: center;
+        box-shadow: 0 5px 4px rgba(0,0,0,.5);
+    }
+    .soc-media ul li a:hover{
+        transform: translateY(-3px);
+    }
+    .soc-media ul li:nth-child(1) a:hover{
+        background-color: #3b5999;
+    }
+    .soc-media ul li:nth-child(2) a:hover{
+        background-color: #55acee;
+    }
+    .soc-media ul li:nth-child(3) a:hover{
+        background-color: #e4405f;
+    }
+    .soc-media ul li:nth-child(4) a:hover{
+        background-color: #25D366;
+    }
+    .soc-media ul li:nth-child(5) a:hover{
+        background-color: #bd081c;
+    }
+    .heading h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    </style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="header" style="background-image: url({% static 'images/bad.jpeg' %});"><div class="matter"> 
+<h2><span> Donate </span></h2>
+<h3><span>Make a difference, right now.</span></h3></div>
+</div>
+<div class="cautn">
+		<div class="heading"><h1>Help us to change lives!</h1></div>
+		<div class="cont">
+			<img src=" {% static 'images/spnchild.jpg' %} " width="300" height="300"><div class="contnt"><p>Thanks very much for your interest in supporting us financially by donating to our orphanage. Our preferred method is to have donations come through the US based non-profit Global Giving. You can donate there through credit card, Paypal and a variety of other options.There are several options/other ways that you can help out. You can also set up monthly donation options if you would like. Please click the link below to donate.</p><a href="payment" ><button>DONATE NOW</button></a></div>
+		</div>
+
+	</div><br><br>
+	<div class="cautn">
+		<div class="heading"><h1>Where the money goes…</h1></div>
+		<div class="cont">
+			<img src="{% static 'images/audit.jpg' %}" width="300" height="300"><div class="contnt"><p>We believe that transparency is extremely important and want to be clear that there are absolutely zero administration fees deducted by us from donations independent of the banking/platform charges.</p>
+
+<p>We are so fortunate to be able to pay all of our own administration fee’s, salaries and similar costs through independent funding programs such as our school, workshop, farm and, occasionally, by donations specifically given by family and friends specifically for these expenses.</p>
+
+</div>
+		</div>
+
+	</div><br><br>
+	<div class="cautn">
+		<div class="heading"><h1>Financial Reports & Audit Reports</h1></div>
+		<div class="cont">
+			<img src="{% static 'images/freport.jpg' %}" width="300" height="300"><div class="contnt"><p>Transparency is important for us and a huge part of what we do is ensuring that supporters know where their money is going. We have always worked hard to accurately account for and report the financial position of our organization. We have a culture of accountability and integrity and are committed to doing the right thing. Many organizations choose to only present their Annual Reports to the public for viewing but in the spirit of full disclosure we have chosen to make available our Audited Financial Reports as well as regular declaration of our Foreign Contribution intake. For those who do not know the Financial Year in India is from April 1st to March 31st each year.</p><p>If you would like further information our Audited Reports and Annual Reports can be viewed via the button below.</p><a href="finreprt"><button>FINANCIAL REPORTS</button></a>  </div>
+		</div>
+
+	</div>
+	<footer>
+
+    <div class="main-content">
+
+        <div class="left-box">
+
+            <h2>ABOUT US</h2>
+
+            <div class="content">
+
+          <p>Smile Foundations ,On our platform, you can donate to a nonprofit with confidence. Our robust due diligence process covers legal, compliance, financial and impact checks for each donation made to any non-profit, including in-person visits to beneficiaries and actual feedback reports. We do all this so that our donors can trust that their giving is indeed doing what it's supposed to do - change lives.</p>
+
+         
+
+        </div>
+
+        </div>
+
+        <div class="right-box">
+
+            <h2>Address</h2>
+
+            <div class="content">
+
+                <div class="place">
+
+                    <span class="fas fa-map-marker-alt"></span>
+
+                    <span class="text">Tirupati</span>
+
+                </div>
+
+                <div class="phone">
+
+                    <span class="fas fa-phone-alt"></span>
+
+                    <span class="text">+91 6309716107</span>
+
+                </div>
+
+                <div class="email">
+
+                    <span class="fas fa-envelope"></span>
+
+                    <span class="text">smilefounations@gmail.com</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+ 		<br><br><br><div class="hline"><hr></div><br>
+ 	
+        <div class="soc-media">
+		<div class="heading"><h1>FOLLOW US</h1></div>
+		<ul>
+			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+			<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+		</ul>
+
+
+	</div>
+    </footer>
+
+</body>
+</html>

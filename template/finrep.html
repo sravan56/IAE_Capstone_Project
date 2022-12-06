@@ -1,0 +1,466 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>body{
+	margin: 0;
+	padding: 0;
+
+}
+.header{
+	padding-top: 250px;
+	width: 100%;
+	height: 720px;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
+span{
+	/*background-color: rgba(0,0,0,0.6);*/
+	color: #fff;
+	font-family: 'Bebas Neue', sans-serif;
+	text-transform: capitalize;
+	text-shadow: 3px 3px #f9a82569;
+}
+
+.matter h2 span{
+	top: 20px;
+	margin-top: 25px;
+	padding:10px; 
+	font-size: 50px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+	
+	color: #fff;	
+}
+.cont{
+	margin: 30px;
+	
+	align-items: center;
+	transition: 0.5s ease;
+	
+}
+
+.contnt p{
+	font-size: 25px;
+	
+	line-height: 1.8;
+	padding: 15px 15px 15px 25px;
+}
+img{
+	width: 40%;
+	height: 40%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	align-items: center;
+}
+
+.column1{
+	float: left;
+	height: 400px;
+	width: 16%;
+	margin-left: 25%;
+	margin-right: 2%;
+	margin-top: 2%;
+	padding: 2%;
+	border:none;
+	background-color:#cccccc1c; 
+	text-align: center;
+}
+.column1:hover{
+	transform: translateY(-7px);
+	box-shadow: rgba(153, 153, 153, 0.2) 0px 5px 40px;
+	/*rgba(153, 153, 153, 0.2)*/
+}
+.column2{
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTonlBiiYuCyR-x5a9OfUz1wAmhYp5NWVMDZA&usqp=CAU');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	float: left;
+	width: 16%;
+	margin-left: 2%;
+	margin-right: 30%;
+	margin-top: 2%;
+	padding: 2%;
+	border:none;
+	text-align: center;
+	background-color: #cccccc1c;
+}
+.column2:hover{
+	transform: translateY(-4px);
+	box-shadow: rgba(153, 153, 153, 0.2) 0px 5px 40px;
+
+}
+.column3{
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/346/742/395/photography-children-happy-wallpaper-preview.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	float: left;
+	width: 16%;
+	margin-left: 2%;
+	margin-right: 30%;
+	margin-top: 2%;
+	padding: 2%;
+	border:none;
+	text-align: center;
+	background-color: #cccccc1c;
+}
+.column3:hover{
+	transform: translateY(-4px);
+	box-shadow: rgba(153, 153, 153, 0.2) 0px 5px 40px;
+
+}
+.column4{
+	background-image: url('https://c4.wallpaperflare.com/wallpaper/781/477/83/summer-the-sky-clouds-flowers-wallpaper-preview.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	float: left;
+	width: 16%;
+	margin-left: 2%;
+	margin-right: 30%;
+	margin-top: 2%;
+	padding: 2%;
+	border:none;
+	text-align: center;
+	background-color: #cccccc1c;
+}
+.column4:hover{
+	transform: translateY(-4px);
+	box-shadow: rgba(153, 153, 153, 0.2) 0px 5px 40px;
+
+}
+.things img{
+	width: 250px;
+	height: 80px;
+}
+@import url('https://c4.wallpaperflare.com/wallpaper/944/90/488/little-girl-happiness-wallpaper-preview.jpg');
+.anreport h1{
+	position: absolute;
+	top: 390px;
+	font-family: 'Quicksand', sans-serif;
+}
+.anreport h1{
+	font-family: 'Quicksand', sans-serif;
+	margin:0;
+	padding: 0;
+	font-size: 30px;
+	color: #fff;
+	background: rgba(0,0,0,0.5);
+}
+ .details{
+	position: absolute;
+	height: 80px;
+	/*top: 400px;
+	left: 10px;*/
+	text-align: right;
+	font-family: 'Quicksand', sans-serif;
+	background: rgba(0,0,0,0.5);
+	/*transform: scaleY(0);*/
+	transition: transform .5s;
+}/*
+.column2:hover .details{
+	transform: scaleY(1);
+}*/
+.things h2{
+	margin-top: 100px;
+}
+.details .content h4{
+	font-family: 'Quicksand', sans-serif;
+	margin:0;
+	padding: 0;
+	font-size: 25px;
+	color: #fff;
+}
+.details .content p{
+	font-family: 'Quicksand', sans-serif;
+	margin:0;
+	padding: 0;
+	font-size: 25px;
+	color: #ff0;
+}
+ hr{
+	border-color: #ff0;
+	border-style: solid;
+}
+.end{
+	margin-top: 20px;
+	margin-left: 30px;
+}
+ footer{
+
+   
+
+        
+        width:100%;
+
+        height: 450px;
+
+        background-color: #000000ab; 
+        color: #fff;
+      }
+
+      .left-box{
+
+       width:60%;
+
+     margin-left: 1%;
+
+  
+
+    float:left;
+
+    font-size: larger;
+
+ 
+
+      }
+
+      .right-box{
+
+          width:28%;
+         
+          margin-right:1%;
+          margin-left: 5%;
+          
+
+          float:right;
+
+          font-size: larger;
+
+      }
+
+      .main-content{
+
+        display: flex;
+
+      }
+
+  
+
+     .left-box h1{
+     	margin: 10px;
+       color:#fff;
+       font-size:20px;
+     }
+
+     .heding h1{
+ 
+     		margin: 10px;
+     	font-size: 20px;
+       color:#fff;
+
+     }
+     
+     .hline{
+	margin:0 200px 0 200px;
+}
+     .soc-media{
+	text-align: center;
+}
+.soc-media ul{
+	position: absolute;
+	
+	padding: 0;
+
+	display: flex;
+	margin-left: 35%;
+}
+.soc-media ul li{
+	list-style: none;
+	margin: 0 15px;
+
+}
+.soc-media ul li .fa{
+	font-size: 25px;
+	line-height: 60px;
+	transition: .5s;
+	color: #fff;
+}
+.soc-media ul li .fa:hover{
+	color: #fff;
+}
+.soc-media ul li a{
+	position: relative;
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #32cd32;
+	text-align: center;
+	box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+.soc-media ul li a:hover{
+	transform: translateY(-3px);
+}
+.soc-media ul li:nth-child(1) a:hover{
+	background-color: #3b5999;
+}
+.soc-media ul li:nth-child(2) a:hover{
+	background-color: #55acee;
+}
+.soc-media ul li:nth-child(3) a:hover{
+	background-color: #e4405f;
+}
+.soc-media ul li:nth-child(4) a:hover{
+	background-color: #25D366;
+}
+.soc-media ul li:nth-child(5) a:hover{
+	background-color: #bd081c;
+}
+.heading h1{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+</style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="header" style="background-image: url({% static 'images/finrep.jpg' %});"><div class="matter"> 
+<h2><span>FINANCIAL & AUDIT REPORTS </span></h2>
+</div>
+</div>
+<div class="cont">
+			<div class="contnt"><p>Transparency is important for us and a huge part of what we do is ensuring that supporters know where their money is going. We have always worked hard to accurately account for and report the financial position of our organization. We have a culture of accountability and integrity and are committed to doing the right thing. Many organizations choose to only present their Annual Reports to the public for viewing but in the spirit of full disclosure we have chosen to make available our Audited Financial Reports as well as regular declaration of our Contribution intake.</p></div>
+		</div>
+		<h1>2020-2021<div></h1><span><hr></span></div>
+		<div class="conatainer">
+<div class="row">
+	<a href="finpdfs"><div class="column1">
+		<div class="things">
+			<div class="ar">
+			<h2>Audit Report<br>{{photo.info}}</h2>
+			<img src="{% static 'images/logo.png' %}" width="300">
+			</div>
+		</a>
+		</div>
+</div>
+	
+<a href="finpdfs"><div class="column2">
+		<div class="things">
+			
+			<div class="details"><div class="content"><h4>  SMILE FOUNDATIONS</h4><br><p>  2020-2021<hr></p><div class="anreport"><h1>ANNUAL REPORT</h1> </div></div></div>
+		</a>
+		</div>
+
+	</div></div></div><br>	<div class="break"><h1>2019-2020</h1><div><span><hr></span></div></div>
+		<div class="conatainer">
+<div class="row">
+	<a href="finpdfs"><div class="column1">
+		<div class="things">
+			<div class="ar">
+			<h2>Audit Report<br>2019-2020</h2>
+			<img src="{% static 'images/logo.png' %}" width="300">
+			</div>
+		</a>
+		</div>
+</div>
+<a href="finpdfs"><div class="column3">
+		<div class="things">
+			
+			<div class="details"><div class="content"><h4>  SMILE FOUNDATIONS</h4><br><p>  2019-2020<hr></p><div class="anreport"><h1>ANNUAL REPORT</h1> </div></div></div>
+		</a>
+		</div>
+
+	</div></div></div><br>
+	<div class="break"><h1>2018-2019</h1><div><span><hr></span></div></div>
+		<div class="conatainer">
+<div class="row">
+	<a href="finpdfs"><div class="column1">
+		<div class="things">
+			<div class="ar">
+			<h2>Audit Report<br>2018-2019</h2>
+			<img src="{% static 'images/logo.png' %}" width="300">
+			</div>
+		</a>
+			</div>
+</div>
+	
+<a href="finpdfs"><div class="column4">
+		<div class="things">
+			
+			<div class="details"><div class="content"><h4>  SMILE FOUNDATIONS</h4><br><p>  2018-2019<hr></p><div class="anreport"><h1>ANNUAL REPORT</h1> </div></div></div>
+		
+		</div>
+
+	</div ></a></div></div><br>
+	<div class="end"><h3>We are happy to answer any questions about the reports as well as discuss details of administrative expenses, salaries, payments, income or expenditure.</h3></div>
+	<footer>
+
+    <div class="main-content">
+
+        <div class="left-box">
+
+           <div class="heding"> <h1>ABOUT US</h1> </div>
+
+            <div class="connt">
+
+          <p>Smile Foundations ,On our platform, you can donate to a nonprofit with confidence. Our robust due diligence process covers legal, compliance, financial and impact checks for each donation made to any non-profit, including in-person visits to beneficiaries and actual feedback reports. We do all this so that our donors can trust that their giving is indeed doing what it's supposed to do - change lives.</p>
+
+         
+
+        </div>
+
+        </div>
+
+        <div class="right-box">
+
+         <div class="heding">   <h1>Address</h1> </div>
+
+            <div class="connt">
+
+                <div class="place">
+
+                    <span class="fas fa-map-marker-alt"></span>
+
+                    <span class="text">Tirupati</span>
+
+                </div>
+
+                <div class="phone">
+
+                    <span class="fas fa-phone-alt"></span>
+
+                    <span class="text">+91 6309716107</span>
+
+                </div>
+
+                <div class="email">
+
+                    <span class="fas fa-envelope"></span>
+
+                    <span class="text">smilefounations@gmail.com</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+ 		<br><br><br><div class="hline"><hr></div><br>
+ 	
+        <div class="soc-media">
+		<div class="heading"><h1>FOLLOW US</h1></div>
+		<ul>
+			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+			<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+		</ul>
+
+
+	</div>
+    </footer>
+
+</body>
+</html>

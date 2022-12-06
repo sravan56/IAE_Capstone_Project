@@ -1,0 +1,151 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+<title>icons</title>
+<style>
+    body{ 
+        padding-top: 25px;
+        margin:0;
+        padding:0;
+        background-color: black;
+        background-image: url("{% static 'images\lo.jpeg' %}");
+       background-repeat: no-repeat;
+       background-size: cover;
+      }
+      .form{
+        padding-top :25px;
+          background-color: rgb(0,0,0,0.2);
+          margin:800px;
+          margin:auto;
+          text-align: center;
+          
+          border-style: solid;
+          width:30%;
+        
+        }
+      
+      form{
+        padding: 10px;
+        color:white;
+        font-family: bold;
+      font-size: large;
+      }
+      h1{
+        text-align: center;
+        color: white;
+      }
+      h2{
+        text-align: center;
+        color: white;
+      }
+      input,select{
+        background-color: whitesmoke;
+        color:black;
+        width:80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border-bottom: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      input[type="checkbox"]{
+          font-size: 50px;
+          width: 20px;
+          height: 20px;
+
+      }
+     
+      .icon{
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+      }
+    
+   
+     
+    button{
+        width: 80%;
+        border: 1px solid #000;
+        background: #fff;
+        margin-top: 20px;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        color: #000;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: 0.5s ease;
+      }
+      button:hover{
+         background-color: #2EE59D;
+         border:none;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px); 
+      }
+   
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="{% static 'javascript/payment.js' %}"></script>  
+
+</head>
+    <body>
+        <div class="form">
+        <form name="paymentform" onsubmit ="return form()" method="POST" >
+            {% csrf_token %}
+         <h1>PAYMENT</h1>
+        <label for="name">Accepted Cards</label>
+        <div class="icon">
+          <i class="fa fa-cc-visa" style="color:navy;"></i>
+          <i class="fa fa-cc-amex" style="color:blue;"></i>
+          <i class="fa fa-cc-mastercard" style="color:red;"></i>
+          <i class="fa fa-cc-discover" style="color:orange;"></i>
+        </div>
+        <label for="name"> Name on Card</label><br>
+            <input type="text"   placeholder="Name on Card" id="name" name="name"  ><br><br>
+            <label for="card">Credit Card Number</label><br>
+            <input type="number" placeholder="Credit Card Number" id="card" name="card" ><br><br>
+            <label for="month"> Expire Month</label><br>
+            <select  placeholder="Expire Month"id="expmonth" name="expmonth">
+                <option value="january"> January</option>
+                <option value="febraury"> Febraury</option>
+                <option value="march"> March</option>
+                <option value="april"> April</option>
+                <option value="may"> May</option>
+                <option value="june"> June</option>
+                <option value="july"> July</option>
+                <option value="august"> August</option>
+                <option value="september"> September</option>
+                <option value="october">October</option>
+                <option value="november"> November</option>
+                <option value="december"> December</option>
+
+            </select><br><br>
+            <label for="year">Expire Year</label><br>
+            <input type="number" placeholder="Expire Year" id="expyear" name="expyear" ><br><br>
+            <label for="cvv">CVV</label><br>
+            <input type="number" placeholder="CVV" id="cvv" name="cvv" ><br><br>
+            <label for="amount">Amount</label><br>
+            <input type="number" placeholder="5000" id="amount" name="amount"><br><br>
+            <input type="checkbox" id="accept" name="accept" value="accept">
+            <span>Checked all the details</span><br><br>
+            <div class="submit">
+                <button class="submit" onclick="validation();"><h4>SUBMIT</h4></button>
+            </div><br><br>
+
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+function validation(){
+swal("Good job!", "You clicked the button!", "success")
+}
+</script>
+    </body>
+</html>

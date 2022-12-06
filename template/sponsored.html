@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<title> Sponsor A Child</title>
+<script>
+
+    function form(){
+    var fname = document.querySelector('#fname');
+    var lname = document.querySelector('#lname');
+    var email = document.querySelector('#email');
+    var phone = document.querySelector('#phone');
+    var amount = document.querySelector('#amount');
+    var Address = document.querySelector('#Address');
+    var submit = document.querySelector('#submit');
+
+
+    
+    if (fname.value==""){
+        alert("name must be filled");
+        return false;
+
+    }
+    if (lname.value==""){
+        alert("name must be filled");
+        return false;
+    }
+        if (email.value==""){
+            alert("email must be filled");
+            return false;
+        }
+        if (phone.value==""){
+            alert("phone number  must be filled");
+            return false;
+        }
+        if (amount.value==""){
+            alert("amount must be filled");
+            return false;
+    
+        }
+        if (Address.value==""){
+            alert("Address must be filled");
+            return false;
+        }
+        
+    
+    return true;
+
+}
+</script>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'Poppins' sans-serif;
+        text-align: center;
+    }
+    body{
+     background:url("https://media.gettyimages.com/photos/children-on-a-old-truck-picture-id1124554704?k=6&m=1124554704&s=612x612&w=0&h=ersKV9xN6CHPqCaP8_7isQ--a_KIXTCXb3XL97OOP1Y=");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      font-family: sans-serif;
+      margin-top: 40px;
+        
+    }
+    .sponsor h1{
+      font-family: cursive;
+      font-size: 30px;
+      background:none;
+      color:black;
+    }
+    .sponsor p{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: x-large;
+      
+    }
+    h1{
+      width:800px;
+      background-color: black;
+      margin:auto;
+      color:white;
+      padding:10px 0px 10px 0px;
+      text-align: center;
+       border-radius: 15px;
+       width:40%;
+    }
+    .form{
+      background-color: rgb(0,0,0,0.5);
+      margin:800px;
+      margin:auto;
+      text-align: center;
+      border-style: solid;
+      
+      width:40%;
+      
+    
+    }
+    form{
+      padding: 10px;
+      color:whitesmoke
+    }
+    input[type="text"],input[type="email"],input[type="number"],input[type="datetime-local"],select,textarea{
+    
+      background-color:whitesmoke;
+      color:black;
+      width:80%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border-bottom: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      text-align: center;
+    
+      
+      
+    }
+    input[type=text]:focus,input[type=email]:focus,input[type=number]:focus,input[type=datetime-local]:focus,select:focus,textarea:focus{
+        background-color:orange;
+        border: 2px solid blue;
+    }
+    input[type=text] {
+        background-color:whitesmoke;
+        color:black;
+        background-position: 20px 20px;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+        text-align: center;
+    
+      }
+      #amount{
+        width:40%;
+      }
+    textarea{
+        width: 80%;
+      height: 100px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-color:white;
+      font-size: 16px;
+      resize: none;
+      text-align: center;
+      
+    
+    }
+    
+    textarea:focus{
+        background-color:orange;
+    }
+    select{
+        
+            width: 80%;
+            padding: 15px 17px;
+            border: none;
+            border-radius: 4px;
+            background-color:white;
+            text-align: center;
+          
+    }
+    
+    input[type="submit"]
+    {
+        background:aqua;
+        color:black;
+        cursor: pointer;
+        padding:15px 17px;
+        margin :2px 1px;
+        border:none;
+        border-radius:15px;
+        text-decoration:none;
+        box-shadow: #ccc;
+        text-align: center;
+        width:30%;
+    }
+    input[type="submit"]:hover{
+      background:orange;
+      width:40%;
+    }
+    @media screen and (max-width:750px){
+      .form{
+        width:100%;
+      }
+      h1{
+        width:100%;
+      }
+    }
+    
+    
+</style>
+    </head>
+    <body>
+        <div class="sponsor">
+            <h1>Meet children waiting for a sponsor</h1>
+            <p>Child sponsorship connects two people — a sponsor with a generous heart and a child. And Sponsorship continues to provide life-changing help to children.</p>
+        </div><br><br>
+      <div class ="regform"><h1>GIVE NOW</h1></div>
+        <div class="form">
+        <form  action ="" name="regform" onsubmit="return form()"  method="POST">
+         {% csrf_token %}
+            <label for="fname">First Name</label><br>
+            <input type="text"   placeholder="First Name" id="fname" name="fname"  ><br>
+
+            <label for="lname">Last Name</label><br>
+            <input type="text" placeholder="Last Name" id="lname" name="lname" ><br>
+            <label for="gender">Gender</label><br>
+            <select  placeholder="Gender"id="gender" name="gender">
+                <option value="male"> Male</option>
+                <option value="female"> Female</option>
+                <option value="other"> Other</option>
+
+            </select><br><br>
+    
+            <label for="email">Email</label><br>
+            <input type="email"  placeholder="E-mail"id="email" name="email" ><br>
+            <label for="phone">Phone Number</label><br>
+            <input type="number" placeholder="Phone NUmber" id="phone" name="phone" ><br>
+            <label for="role">Role</label><br>
+            <input type="text"placeholder="Role" id="Role" name="Role"><br><br>
+            
+            
+
+            <label for="amount">Amount you want to sponsor or donate</label><br>
+            <input type="number" placeholder="5000"id="amount" name="amount" ><br>  
+             <label for="Address">Address</label><br>
+              <textarea  id="Address" name="address"placeholder="Address" rows="4" columns="50" >
+             </textarea><br><br>
+            <label for="message"></label><br>
+             <input type="text" placeholder="Write Your Message" id="message" name="message"><br><br>
+                    
+             <div class="submit">
+                 <input type="submit" value="SEND" >
+             </div>
+        </form>
+        
+    </body>
+    
+</div>
+
+
+</html>

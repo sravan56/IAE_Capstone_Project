@@ -1,0 +1,414 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SPONSOR A CHILD</title>
+        <link rel="stylesheet" href="sponsoredpage.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+*{
+    text-align: center;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+.header{
+    text-align: left;
+	color:whitesmoke;
+	font-size: 30px;
+	padding:100px;
+    height:500px;
+	font-style: italic;
+background: url("https://www.wallpapertip.com/wmimgs/29-297490_childrens-hd.jpg");
+    
+    background-size: 100% 70%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+.header h1{
+    font-size: 70px;
+    text-align: left;
+}
+.header h2{
+    font-size: 50px;
+    text-align: left;
+}
+.header h3{
+    font-size: 40px;
+    text-align: left;
+}
+.column1{
+    width:48%;
+    float: left;
+    height:300px;
+    padding:15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    margin:1%;
+    
+}
+.column2{
+    width:48%;
+    float: left;
+    font-style: oblique;
+    background-color: grey;
+    color:white;
+    height:300px;
+    padding:15px;
+    margin:1%;
+    font-size: x-large;
+
+}
+.column3{
+    width:30%;
+    float: left;
+    height:300px;
+    padding:15px;
+background:url("https://media.gettyimages.com/photos/indian-rural-girls-picture-id182720270?k=6&m=182720270&s=612x612&w=0&h=O3EVgoY06puZ56czdfXJ-Z_swHXRVA0vf90Prvmpyos=");
+background-repeat: no-repeat;
+background-size: 500px 300px;
+margin:1%;
+}
+.row2 h2{
+    font-family: Trebuchet MS;
+    font-size: xx-large;
+    
+}
+.column4{
+    width:30%;
+    float: left;
+    height:300px;
+    padding:15px;
+    background:url("https://media.gettyimages.com/photos/lessons-of-life-picture-id158565448?k=6&m=158565448&s=612x612&w=0&h=6gD13SC82Bmm5qVS_lHfpCAkGFJhHdkuX486s_A6wlY=");
+    background-repeat: no-repeat;
+    background-size: 500px 300px;
+    margin:1%;
+}
+.column5{
+    width:30%;
+    float: left;
+    height:300px;
+    padding:15px;
+    background:url("https://media.gettyimages.com/photos/cheerful-children-lying-dawn-on-grass-picture-id522397820?k=6&m=522397820&s=612x612&w=0&h=yhUeAAGVA68QWCaIUoFr_raC-V3bWL3kEsYPr2cTo3w=");
+    background-repeat: no-repeat;
+    background-size: 500px 300px;
+    margin:1%;
+}
+.column6{
+    width:30%;
+    float: left;
+    font-style: oblique;
+    background-color:gainsboro;
+    height:300px;
+    padding:15px;
+    margin:1%;
+    font-size: x-large;
+}
+.column7{
+    width:30%;
+    float: left;
+    font-style: oblique;
+    background-color:gainsboro;
+    height:300px;
+    padding:15px;
+    margin:1%;
+    font-size: x-large;
+
+}
+.column8{
+    width:30%;
+    float: left;
+    font-style: oblique;
+    background-color:gainsboro;
+    height:300px;
+    padding:15px;
+    margin:1%;
+    font-size: x-large;
+
+}
+
+  a{
+    background-color:seagreen;
+    color:whitesmoke;
+    border-radius: 24px;
+    border-style: solid;
+    text-align:center;
+    font-size: 20px;
+    width:30%;
+    margin-left:3%;
+  text-decoration: none;
+ padding:14px 25px;
+ display:inline-block;
+        
+}
+a:hover{
+    background:lightgreen;
+    color:black;
+}
+.footer{
+    font-family: Trebuchet MS;
+}
+.row1:after {
+    content: "";
+    display: table;
+    clear:both;
+    }
+    .row2:after {
+        content: "";
+        display: table;
+        clear:both;
+     }
+     .row3::after{
+        content: "";
+        display: table;
+        clear:both;
+     }
+     h2{
+         text-align: center;
+     }
+     #sponsor{
+         border-collapse: collapse;
+         place-items:inherit;
+         text-align: left;
+         margin-left: 25%;
+         margin-right:25%;
+         
+         box-shadow: 10px 10px lightgreen;
+     }
+     #sponsor td ,#sponsor th{
+         border:1px solid black;
+         padding:8px;
+     }
+     #sponsor th{
+         background-color: orange;
+         color: black;
+         padding-top: 12px;
+         padding-bottom: 12px;
+         text-align: center;
+     }
+     #sponsor tr:nth-child(even){
+         background-color: beige;
+
+     }
+     #sponsor tr:nth-child(odd){
+        background-color: aquamarine;
+
+    }
+    #sponsor tr:hover{
+        background-color:  greenyellow;
+    }
+    
+    footer{
+   
+        bottom:0px;
+        width:100%;
+        height:300px;
+        background: lightgreen;
+      }
+      .left-box{
+       width:70%;
+     margin-left: 1%;
+    height:300px;
+    float:left;
+    font-size: larger;
+
+      }
+      .right-box{
+          width:23%;
+          margin-right:1%;
+          height:300px;
+          float:right;
+          font-size: larger;
+      }
+      .main-content{
+        display: flex;
+      }
+  
+     .left-box h2{
+       color:black;
+     }
+     .right-box h2{
+       color:black;
+     }
+     .social a{
+        height:40px;
+        width:40px;
+        background: lightgreen;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 5px;
+        border:none;
+        padding: 0;
+        
+        
+    
+     }
+      .left-box .content .social a span{
+        height:40px;
+        width:40px;
+        background: black;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: 0.3s;
+    
+      }
+      .left-box .content .social a span:hover{
+        background: tomato;
+      }
+@media screen and (max-width:750px){
+    .column1{
+        width:100%;
+    }
+    .column2{
+        width:100%;
+    }
+    .column3{
+        width:100%;
+    }
+    .column4{
+        width:100%;
+    }
+}
+</style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>CHANGE</h1>
+            <h2>Everything</h2>      
+            <h3>FOR AN ORPHAN</h3>
+            <div class="button">
+                <h2><a href="sponsored"> SPONSOR NOW</a></h2>
+                </div>
+
+        </div>
+        <div class= "row1">
+        <div class="column1">
+            <p>The journey to end poverty<br> for good begins with<br> a child.</p><br><br>
+        
+            <p>You can also contact us at this number</p>
+            <p>+91 6309716107</p>
+
+            </div>
+            <div class="column2">
+                <p>Sponsoring a child is a personal way to show God's love to a child in need.But with support from people like you, we can help children get the health care, education, life skills, job-readiness training and confidence they need to create lasting change in their lives and communities.
+
+            </p>
+            <h2><a href="sponsoring"> Sponsor A Child</a></h2>
+            
+            </div>
+            </div>
+            <div class= "row2">
+                <h2>What we Focus On</h2>
+                <div class="column3">
+             
+        
+                </div>
+                <div class="column4">
+                    
+                </div>
+                <div class="column5">
+
+                </div>
+            </div>
+                    <div class= "row3">
+                        <div class="column6">
+                            <h3>Lasting Impact</h3>
+                            <p>Children in poverty are more likely to be exposed to the stress of violence, gangs and drugs. This can negatively affect brain development and long-term well-being. Your support during this vulnerable time helps children and youth set their own goals to build a life free from poverty.</p>
+                
+                        </div>
+                        <div class="column7">
+                                <h3>Good that grows</h3>
+                                <p>
+                                    When you sponsor a child, you create a powerful multiplier effect. You help them see beyond the daily struggles of life in poverty. Your support releases them from a cycle of short-term decisions and helps them gain the ability to begin contributing to their own families and communities.
+                                </p>
+                            
+                        </div>
+                        <div class="column8">
+                              <h3>Poverty free</h3>
+                              <p>Sponsorship encompasses key programs specifically designed to address a child’s toughest issues in their fight against poverty. Getting and staying healthy, staying in school, finding a stable job. You can help a child overcome challenges . You can help set them free.</p>
+                        </div>
+                        </div><br>
+                            
+    <h2>YOU CAN SPONSOR A CHILD FOR ONE OR SEVERAL OF THE FOLLOWING EXPENSES</h2>
+ <table id="sponsor">
+    <tr>
+    <th> SPONSOR A CHILD FOR</th>
+    <th> WE USE SPONSORING MONEY FOR</th>
+    <th>AMOUNT</th>
+    </tr>
+    <tr>
+    <td>EDUCATION</td>
+    <td>SCHOOL FEES ,UNIFORMS ,
+        BOOKS ,SHOES,ETC.</td>
+    <td>Rs 5000</td>
+   </tr>
+   <tr>
+    <td>HOME</td>
+    <td>FOOD,BED,BLANKETS</td>
+    <td>Rs 4000</td>
+   </tr>
+   <tr>
+    <td>HEALTH</td>
+    <td>HOSPITAL & MEDICAL CHARGES</td>
+    <td>Rs 5000</td>
+   </tr>
+   <tr>
+    <td>SPORTS</td>
+    <td>SPORTS KITS,JERSEYS,TOYS</td>
+    <td>Rs 5000</td>
+   </tr>
+   <tr>
+    <td>ENTERTAINMENT</td>
+    <td>TOURS,EVENTS, & OUTINGS</td>
+    <td>Rs 5000</td>
+   </tr>
+</table><br><br>
+<div class="footer">
+    <h2>Change a life today. Sponsor a child now.
+    </h2>
+</div><br><br>
+<footer>
+    <div class="main-content">
+        <div class="left-box">
+            <h2>ABOUT US</h2>
+            <div class="content">
+          <p>Smile Foundations ,On our platform, you can donate to a nonprofit with confidence. Our robust due diligence process covers legal, compliance, financial and impact checks for each donation made to any non-profit, including in-person visits to beneficiaries and actual feedback reports. We do all this so that our donors can trust that their giving is indeed doing what it's supposed to do - change lives.</p>
+         <div class="social">
+             <a href= "#"><span class="fab fa-facebook-f"></span></a>
+             <a href= "#"><span class="fab fa-twitter"></span></a>
+             <a href= "#"><span class="fab fa-instagram"></span></a>
+             <a href= "#"><span class="fab fa-youtube"></span></a>
+         </div>	
+        </div>
+        </div>
+        <div class="right-box">
+            <h2>Address</h2>
+            <div class="content">
+                <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Tirupati</span>
+                </div>
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+91 6309716107</span>
+                </div>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">smilefounations@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    </footer>
+
+    </body>
+</html>

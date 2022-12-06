@@ -1,0 +1,141 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meet the child in need </title>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="{% static 'https://kit.fontawesome.com/a076d05399.js' %}"></script>
+<style>
+*{
+    padding:0;
+    margin:0;
+    
+
+}
+h1{
+    font-size: 50px;
+    font-family:  cursive;
+    text-align: center;
+    margin-top: 100px;
+}
+.container {
+	height: 100%;
+	margin: 20px auto 0;
+		padding: 0 6px;
+		float: left;
+		width: 24%;
+        display: flex;
+	  }
+      .container::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+.container .box{
+position: relative;
+width: 300px;
+height: 240px;
+background:#ff0;
+border:2px solid #fff;
+margin: 15%;
+box-sizing: border-box;
+transition: transform 2s;
+}
+
+.container .box .imgBox{
+	position: relative;
+	overflow: hidden;
+}
+.container .box .imgBox img{
+	max-width: 100%;
+	max-height: 100%;
+	transition: transform 2s;
+}
+
+.container .box:hover .imgBox img{
+transform: scale(1.2);
+}
+.container .box .details{
+	position: absolute;
+	top: 180px;
+	left: 10px;
+	bottom: 5px;
+	right: 5px;
+	background: rgba(0,0,0,0.5);
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+.container .box:hover .details{
+	transform: scaleY(1);
+}
+.container .box .details .content
+{
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+}
+
+.container .box .details .content p{
+	margin:0;
+	padding: 0;
+	font-size: 10px;
+	color: #fff;
+}
+.container a{
+    background-color:lightgreen;
+    color:black;
+    border-radius: 20px;
+    border-style: none;
+    text-align:center;
+    font-size: 20px;
+    width:80%;
+    margin-left:0%;
+  text-decoration: none;
+  padding:14px 25px;
+ display:inline-block;
+        
+}
+
+a:hover{
+    background:seagreen;
+    color:white;
+}
+
+</style>
+
+    </head>
+    <body>
+
+      <h1> CHILDREN WAITING FOR THE SPONSORS</h1>
+    {% for pics in pics %}
+<div class="container">
+	
+	<div class="box"><div class="imgBox">
+		<img src="{{pics.img.url}}" width="300" height="240">
+		<div class="details"><div class="content"><p>{{pics.name}}</p>
+        <p>{{pics.age}}</p>
+        </div>
+        </div> <br><br>
+        
+	</div>
+        <a href="sponsored">SPONSOR NOW</a>
+
+    </div>
+	
+        
+   
+</div>
+
+  {% endfor %}
+  <br>
+  <br>
+
+      
+    </body>
+</html>  

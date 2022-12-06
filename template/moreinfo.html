@@ -1,0 +1,138 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<html>
+    <title>
+        
+
+    </title>
+    <link href="{% static 'css\moreinfo.css' %}" rel="stylesheet">
+    
+    <body>
+        <div class="header">
+            <h1>SURPLUS FOOD <br><b>DONATION GUIDE</b></h1>
+        </div>
+        <h1>PLEASE READ THE GUIDELINES BEFORE DONATING FOOD</h1>
+        <div class="row1">
+            <div class=c11>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD3y0po3p8-hfYa6vVLi2Hg4XV4W5FBpVB6A&usqp=CAU" width="100%" height="300px">
+
+            </div>
+            <div class=c12>
+                <img src="data:image/jpeg;base64,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" width="100%" height="300px">
+
+            </div>
+            <div class=c13>
+                <img src="https://media.gettyimages.com/photos/poor-indian-children-asking-for-food-india-picture-id1198844496?k=6&m=1198844496&s=612x612&w=0&h=Q0RLSxgoXJFzkXNYke0-C_JAcFWLEBMyh1C0H-JYREo=" width="100%" height=300px>
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class=c21>
+            <h2>What is food redistribution? </h2>
+            <p>
+                Redistribution is the process whereby
+            surplus food that would otherwise have
+            ended up as waste is, instead, made
+            available for people to eat
+            About 6.7 million tonnes of food is wasted every year by the households. It is about one third of the 21.7 million tonnes food purchased by the households
+            </p>
+        </div>
+        <div class=c22>
+            <h2>The issue with food waste</h2>
+            <p>Food waste is an issue that affects
+                everyone in the food supply chain
+                including cafés, restaurants and hotels,
+                as well as wholesale, manufacturing and
+                retail food organisations. The amount
+                of food a business throws away is one
+                indicator of the efficiency of the business. </p>
+                </div>
+                <div class=c23>
+            <h2>Why redistribute surplus food</h2>
+           <p>Food redistribution can offer many
+            environmental, social and economic
+            benefits, including:</p>
+            <ul>
+            <li> Saving on your waste disposal costs.</li>
+            <li> Providing food directly to people
+             in need.</li>
+            <li>Impacting positively on staff morale.</li>
+       
+            </ul>
+            
+        </div>
+        </div>
+
+        <div class=row3>
+
+           
+          <div class=c31>
+            <h2 style="text-align: center;">
+                What can you Donate?
+            </h2>
+            
+            <li> <b>Raw materials</b> – any food that has been
+                purchased, not used, but is still fit for
+                human consumption.</li>
+            <li><b>Durability dates</b> – any food products nearing
+                their best-before and use-by dates.</li>
+            <li> <b>Packaged food</b> – non-perishable food
+                products in unopened packaging (e.g.
+                condiments, biscuits and fruit juices).</li>
+            <li> <b>Meals</b> – if these have not been served, then
+                they can be redistributed. However, it is recommended that meals should not be
+                donated if they contain raw fish or eggs, or
+                have been cooked at lower temperatures
+                unless appropriate time/temperature
+                conditions have been met.</li>
+            <li> <b>Manufacturing processes</b> – products can be
+                redistributed if they have not been in direct
+                contact with customers
+                Once you have identified where food surplus
+                might occur, you should assess the likely
+                quantity and how often it happens.</li>
+           
+            </ul>
+
+        </div>
+        <div class=c32>
+            <img src="https://media.gettyimages.com/photos/healthy-fresh-rainbow-colored-fruits-and-vegetables-background-picture-id1208790371?k=6&m=1208790371&s=612x612&w=0&h=FCAj7paMmtAYe4W-8j12fSh9fe2Uf1yt7CItAzMNLTA=" width="100%" height="320">
+
+        </div>
+        </div>
+        <div row4>
+            <div class="c41">
+                <img src="https://media.gettyimages.com/photos/the-homeless-street-children-are-waiting-for-their-mid-day-meal-at-picture-id170504820?k=6&m=170504820&s=612x612&w=0&h=xUeEToLXkMZhQg5mRKvcHdos8fzPpQARflGqJI0VeWg=" width="100%" height="320">
+            </div>
+        <div class=c42>
+            <h1>OTHERS.....</h1>
+            <li> Fresh and frozen fruit and vegetables.</li>
+        <li>Fresh and frozen meat and fish.</li>
+    <li> Dairy products.</li>
+<li> Chilled ready meals and packaged food.</li>
+<li> Frozen processed foods (e.g. chips and
+                ready meals).</li>
+            <li> Hot and cold beverages (excluding alcohol).</li>
+        <li> Ambient food including jars and tins.<br>
+    <li>Bakery products.</li>
+<li> Fresh sandwiches .</li>
+<li>Eggs</li>
+<li> Food with an expired best-before date</li>
+        </ul>
+    </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="last">
+      <a href="registerform">donate here</a>
+    </div>
+       
+    </body>
+</html>

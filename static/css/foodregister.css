@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+body{
+  background-image: url("https://media.gettyimages.com/photos/healthy-eating-selection-of-antioxidant-group-of-food-frame-copy-picture-id1182837157?k=6&m=1182837157&s=612x612&w=0&h=JLnmMiZzMffBZTeIgQs-XEUD2eTdtsYFGymmSmQtOC0=");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  margin-top: 40px;
+    
+}
+h1{
+  width:800px;
+  background-color: black;
+  margin:auto;
+  color:white;
+  padding:10px 0px 10px 0px;
+  text-align: center;
+   border-radius: 15px;
+   width:40%;
+}
+h2{
+  width:800px;
+ background-color: orange;
+  margin:auto;
+  color:black;
+  padding:10px 0px 10px 0px;
+  text-align: center;
+   border-radius: 15px;
+   width:40%;
+}
+.form{
+  background-color: rgb(0,0,0,0.5);
+  margin:800px;
+  margin:auto;
+  text-align: center;
+  border-style: none;
+  
+  width:40%;
+  
+
+}
+form{
+  padding: 10px;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="datetime-local"],select,textarea{
+
+  background-color:linen;
+  color: black;
+  width:80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-bottom: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+
+  
+  
+}
+input[type=text]:focus,input[type=email]:focus,input[type=number]:focus,input[type=datetime-local]:focus,select:focus,textarea:focus{
+    background-color:lightyellow;
+    border: 2px solid white;
+}
+input[type=text] {
+    background-color:white;
+    color:black;
+    background-position: 20px 20px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    text-align: center;
+
+  }
+textarea{
+    width: 80%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: rgb(244, 248, 248);
+  font-size: 16px;
+  resize: none;
+  text-align: center;
+
+}
+textarea:focus{
+    background-color:rgb(226, 219, 206);
+}
+select{
+    
+        width: 80%;
+        padding: 15px 17px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(227, 235, 235);
+        text-align: center;
+      
+}
+
+input[type="submit"]
+{
+    background:seagreen;
+    color:black;
+    cursor: pointer;
+    padding:15px 17px;
+    margin :2px 1px;
+    border:none;
+    border-radius:4px;
+    text-decoration:none;
+    box-shadow: #ccc;
+    text-align: center;
+
+}
+input[type="submit"]:hover{
+  background:orange;
+  width:40%;
+}
+label{
+  color: #ccc;
+}
+
+
+.submit{
+
+  background:seagreen;
+  color:black;
+  cursor: pointer;
+  padding:15px 17px;
+  margin :2px 1px;
+  border:none;
+  border-radius:4px;
+  text-decoration:none;
+  box-shadow: #ccc;
+  text-align: center;
+  width:800px;
+  background-color: black;
+  margin:auto;
+  color:white;
+  padding:10px 0px 10px 0px;
+  text-align: center;
+   border-radius: 15px;
+   width:40%;
+
+}

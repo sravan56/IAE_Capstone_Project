@@ -1,0 +1,577 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>*{
+        margin:0;
+        padding: 0;
+    }
+    .topsection{
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bgimg.jpg);
+        width: 100%;
+        height: 120%;
+        background-repeat: no-repeat;
+        position: relative;
+        text-align: center;
+    padding-top:80px; 
+    }
+    h2{
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
+    span{
+        /*background-color: rgba(0,0,0,0.6);*/
+        color: #fff;
+        font-family: 'Bebas Neue', sans-serif;
+        text-transform: capitalize;
+        text-shadow: 3px 3px #f9a82569;
+    }
+    button{
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        border: 2px solid #009688;
+        background-color: #60bc0f;
+        color: #fff;
+        font-weight: 600;
+        text-shadow: 1px 1px #ccc;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        outline: none;
+        transition: 0.5s ease;
+    }
+    .topsection button:hover{
+       background-color: #5a9a23;
+     
+      
+      color: #fff;
+      transform: translateY(-7px);
+      }
+    a{
+        text-decoration: none;
+        
+    }
+    .conatainer{
+        display: inline-block;
+        padding: 30px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    .things p{
+    font-family: 'Lobster', cursive;
+    }
+    img{
+        width: 40%;
+        height: 40%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+    
+    .column1{
+        float: left;
+        width: 16%;
+        margin-left: 230px;
+        margin-right: 2%;
+        margin-top: 2%;
+        padding: 2%;
+        border:none;
+        background-color:#cccccc1c; 
+        text-align: center;
+    }
+    .column1:hover{
+        transform: translateY(-7px);
+        box-shadow: rgba(153, 153, 153, 0.2) 0px 5px 40px;
+        /*rgba(153, 153, 153, 0.2)*/
+    }
+    .column2{
+        float: left;
+        width: 16%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 2%;
+        padding: 2%;
+        border:none;
+        text-align: center;
+        background-color: #cccccc1c;
+    }
+    .column2:hover{
+        transform: translateY(-7px);
+        box-shadow: rgba(153, 153, 153, 0.2) 0px 5px 40px;
+    
+    }
+    .column3{
+        float: left;
+        width: 16%;
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 2%;
+        padding: 2%;
+        border:none;
+        background-color: #cccccc1c;
+    }
+    .column3:hover{
+        transform: translateY(-7px);
+        box-shadow: rgba(153, 153, 153, 0.2) 0px 5px 40px;
+    
+    }
+    footer{
+        text-align: center;
+    }
+    @media screen and (max-width:700px) {
+      .column1 {
+          place-items: center;
+          margin-left: 20%;
+          margin-right: 20%;
+        width: 60%;
+        padding:1%;
+      }
+      .column2 {
+          margin-left: 20%;
+          margin-right: 20%;
+          width: 60%;
+          
+    
+        }
+       
+        .column3 {
+          margin-left: 20%;
+          margin-right: 20%;
+          width: 60%;
+        }
+        
+         ul{
+             width: 90%;
+             left: -30px;
+             margin-right: 2%;
+         }
+        
+        .content {
+            width: 400px;
+        }
+        .content img{
+            width: 100%;
+    
+        }
+        .cont {
+            width: 400px;
+        }
+        .cont img{
+            width: 100%;
+    
+        }
+    }
+    .things h2{
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+        font-family: 'Anton', sans-serif;
+        padding-bottom: 2px;
+    
+    } 
+    .adress{
+        background-color: #60bc0f; 
+        text-align: center;
+        color: #fff;
+    }
+    .adr{
+        margin: 7px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .adrh{
+        font-size: 20px;
+        text-shadow: 3px 3px #f9a82569;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    .list{
+        background-image: url(https://media.gettyimages.com/photos/blackboard-surface-texture-picture-id1180411277?k=6&m=1180411277&s=612x612&w=0&h=-NO2CczurP1YPSD9KPmActwjoWJmjl2GCs5YvN9mL2k=);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding:50px 0px 50px 0;
+        margin-left: 10px;
+        font-size: 30px;
+        color: #fff;
+    }
+    ul {
+        margin:0 50px 50px 45px; 
+        float: left;
+    }
+    li{
+        margin: 5px 0;
+    }
+    .list:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    .heading{
+        margin-top: 60px;
+        margin-bottom: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 3px 3px #f9a82569;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    .list ul{
+    font-family: 'Lobster', cursive;
+    }
+    .content{
+        margin: 30px;
+        text-align: center;
+        align-items: center;
+        transition: 0.5s ease;
+        
+    }
+    .content:hover{
+        transform: translateY(-7px);
+        background-color:#60bc0f;
+        box-shadow: gray 0px 5px 40px;
+    }
+    .cont{
+        margin: 30px;
+        text-align: center;
+        align-items: center;
+        transition: 0.5s ease;
+        
+    }
+    .cont:hover{
+        transform: translateY(-7px);
+        background-color:#FFF59D;
+        box-shadow: gray 0px 5px 40px;
+    }
+    
+    .content img{
+        width: 355px;
+        height: 317px;
+        float: left;
+        
+        box-shadow: gray 0px 5px 40px;
+        margin: 18px 20px 18px 20px;
+    }
+    .cont img{
+        width: 355px;
+        height: 317px;
+        float: right;
+        
+        box-shadow: gray 0px 5px 40px;
+        margin: 18px 20px 18px 20px;
+    }
+    .contnt p{
+        font-size: 35px;
+        background-color: #60bc0f;
+        color: #fff;
+        padding: 15px 15px 15px 25px;
+    }
+    .hline{
+        margin:0 100px 0 100px;
+    }
+     footer{
+    
+       
+    
+            
+            width:100%;
+    
+            height: 450px;
+    
+            background-color: #000000ab; 
+            color: #fff;
+          }
+    
+          .left-box{
+    
+           width:60%;
+    
+         margin-left: 1%;
+    
+      
+    
+        float:left;
+    
+        font-size: larger;
+    
+     
+    
+          }
+    
+          .right-box{
+    
+              width:28%;
+             
+              margin-right:1%;
+              margin-left: 5%;
+              
+    
+              float:right;
+    
+              font-size: larger;
+    
+          }
+    
+          .main-content{
+    
+            display: flex;
+    
+          }
+    
+      
+    
+         .left-box h1{
+             margin: 10px;
+           color:#fff;
+           font-size:20px;
+         }
+    
+         .heding h1{
+     
+                 margin: 10px;
+             font-size: 20px;
+           color:#fff;
+    
+         }
+         
+         .hline{
+        margin:0 200px 0 200px;
+    }
+         .soc-media{
+        text-align: center;
+    }
+    .soc-media ul{
+        position: absolute;
+        
+        padding: 0;
+    
+        display: flex;
+        margin-left: 35%;
+    }
+    .soc-media ul li{
+        list-style: none;
+        margin: 0 15px;
+    
+    }
+    .soc-media ul li .fa{
+        font-size: 25px;
+        line-height: 60px;
+        transition: .5s;
+        color: #fff;
+    }
+    .soc-media ul li .fa:hover{
+        color: #fff;
+    }
+    .soc-media ul li a{
+        position: relative;
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #32cd32;
+        text-align: center;
+        box-shadow: 0 5px 4px rgba(0,0,0,.5);
+    }
+    .soc-media ul li a:hover{
+        transform: translateY(-3px);
+    }
+    .soc-media ul li:nth-child(1) a:hover{
+        background-color: #3b5999;
+    }
+    .soc-media ul li:nth-child(2) a:hover{
+        background-color: #55acee;
+    }
+    .soc-media ul li:nth-child(3) a:hover{
+        background-color: #e4405f;
+    }
+    .soc-media ul li:nth-child(4) a:hover{
+        background-color: #25D366;
+    }
+    .soc-media ul li:nth-child(5) a:hover{
+        background-color: #bd081c;
+    }
+    .heading h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }</style>
+</head>
+<body>
+
+
+<div class="topsection">
+
+	<h2><span>donate things to change lives of orphans</span></h2>
+	<h3><span>A really great way to help us out is to donate goods to our orphanage.</span></h3>
+	<a href="dtreform"><button>Donate now</button></a>
+</div>
+<div class="conatainer">
+<div class="row">
+	<div class="column1">
+		<div class="things">
+			<h2>Donate Toys</h2>
+			<img src="{% static 'images/toyy.png' %}">
+			<p>Everyone have their most funtimes is playing with toys. if your child doesn’t play with some toys anymore,donate them!.Toy donations brings happiness and smiles on orphanage kids. </p></div>
+		</div>
+
+	
+	<div class="column2">
+		<div class="things">
+			<h2>Donate Clothes</h2>
+			<img src="{% static 'images/cloth.png' %}">
+			<p>you’re looking for a way to help the needy, donating clothes could be a super-easy start. A small gesture of yours will brings lots of happiness in orphanage homes. Donate them to orphanage kids.</p>
+		</div>
+
+	</div>
+	<div class="column3">
+		<div class="things">
+			<h2>Donate Books</h2>
+			<img src="{% static 'images/boks.png' %}">
+			<p> Books have been your friends. They helped you find solutions to you. Reading books can improve careativity and imagination power. Share with the less fortunate orphans, books are not affordable.</p>
+		</div>
+
+	</div>
+
+</div>
+</div>
+<div class="adress">
+	<div class="adrh"><h1>Postal Adress For Packages</h1></div>
+	<div class="adr"><h3>Attn: Nellore ShipWay</h3></div>
+	<div class="adr"><h3>Beach Farm</h3></div>
+	<div class="adr"><h3>Sullurpeta</h3></div>
+	<div class="adr"><h3>Dist. Nellore</h3></div>
+	<div class="adr"><h3>ANDHRA PRADESH, INDIA</h3></div>
+	<div class="adr"><h3>Phone: +91 9052701149</h3></div>
+</div>
+
+	<div class="heading">
+		<h1>THINGS TO DONATE</h1>
+	</div>
+
+	<div class="list">
+		<ul>
+			<li>PPE equipment (masks and hand sanitizer)</li>
+			<li>Library Books (reference books, story books)</li>
+			<li>Boys shorts (age 8 to adults)</li>
+			<li>Boys/Girls Jeans (age 8 to adults)</li>
+			<li>Shoes (boys/girls US size 5-10)</li>
+			<li>T-shirts (all ages)</li>
+			<li>Jackets or rain-coats (all ages)</li>
+			<li>Craft supplies (color pencils, stationary…etc.)</li>
+			<li>Socks</li></ul>
+			<ul>
+			<li>Board games (but not Uno as we have many sets)</li>
+			<li>Sports equipment (bat, balls… etc.)</li>
+			<li>Toys (Lego, dolls, cars… etc.)</li>
+			<li>Bags (school backpack’s)</li>
+<li>Stationary kits</li>
+<li>Blue and black pens</li>
+<li>Hats</li>
+<li>Belts (especially boys age 6-18)</li>
+<li>Toiletries (shampoo, soap, hair oil… etc.)</li>
+		</ul>
+	</div>
+	<div class="caution">
+		<div class="heading"><h1>Preparing Your Postage</h1></div>
+		<div class="content">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKFenhV_niJ3vmKpx6kUIFJ75AQ6gM797IQA&usqp=CAU" width="300" height="300"><div class="contnt"><p>The Indian Postal System is not the most reliable and sometimes package “accidentally get opened” and items sometimes “fall out and go missing” because of this we recommend that people wrap up their parcels with cello-tape or ductape so that they can not easily open.
+
+One of the best packaging methods for soft items like clothing/shoes/toys is to use a standard woven polypropylene bag (the type that farmers use for grain/farming products). These sacks are light, tough and also reasonably water proof so they will protect your donation well.</p></div>
+		</div>
+<br><br><div class="hline"><hr></div>
+	</div>
+	<div class="cautn">
+		<div class="heading"><h1>What About Shipping & Couriers?</h1></div>
+		<div class="cont">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKlFYD-Qcwckqf16-OhbIDpsJfh_BFm1Z2ow&usqp=CAU" width="300" height="300"><div class="contnt"><p>We have experienced a lot of heartache over the years with parcels and postage being lost in transit; for this reason we recommend only using Government Postal Services (such as India Post, US Mail, Australia Post… etc) -though there are still no guarantees. While private couriers such as UPS do sometimes get here it is often with a lot of additional phone calls and organization. In India the shipping company DTDC delivers to our door but only if the postage code for the nearby town of Tanakpur is used (262309).</p></div>
+		</div>
+
+	</div>
+	<br><br><div class="hline"><hr></div>
+	<div class="caution">
+		<div class="heading"><h1>Safe packing Goods</h1></div>
+		<div class="content">
+			<img src="{% static 'images/safed.jpg' %}" width="300" height="300"><div class="contnt"><p>The Indian Postal System is not the most reliable and sometimes package “accidentally get opened” and items sometimes “fall out and go missing” because of this we recommend that people wrap up their parcels with cello-tape or ductape so that they can not easily open.
+
+One of the best packaging methods for soft items like clothing/shoes/toys is to use a standard woven polypropylene bag (the type that farmers use for grain/farming products). These sacks are light, tough and also reasonably water proof so they will protect your donation well.</p></div>
+		</div>
+<br><br><div class="hline"><hr></div>
+	</div>
+ <footer>
+
+    <div class="main-content">
+
+        <div class="left-box">
+
+           <div class="heding"> <h1>ABOUT US</h1> </div>
+
+            <div class="connt">
+
+          <p>Smile Foundations ,On our platform, you can donate to a nonprofit with confidence. Our robust due diligence process covers legal, compliance, financial and impact checks for each donation made to any non-profit, including in-person visits to beneficiaries and actual feedback reports. We do all this so that our donors can trust that their giving is indeed doing what it's supposed to do - change lives.</p>
+
+         
+
+        </div>
+
+        </div>
+
+        <div class="right-box">
+
+         <div class="heding">   <h1>Address</h1> </div>
+
+            <div class="connt">
+
+                <div class="place">
+
+                    <span class="fas fa-map-marker-alt"></span>
+
+                    <span class="text">Tirupati</span>
+
+                </div>
+
+                <div class="phone">
+
+                    <span class="fas fa-phone-alt"></span>
+
+                    <span class="text">+91 6309716107</span>
+
+                </div>
+
+                <div class="email">
+
+                    <span class="fas fa-envelope"></span>
+
+                    <span class="text">smilefounations@gmail.com</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+ 		<br><br><br><div class="hline"><hr></div><br>
+ 	
+        <div class="soc-media">
+		<div class="heading"><h1>FOLLOW US</h1></div>
+		<ul>
+			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+			<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+		</ul>
+
+
+	</div>
+    </footer>
+
+
+</body>
+</html>

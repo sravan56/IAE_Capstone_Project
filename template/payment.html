@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Payment Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="payment.css">
+<script src="{% static 'javascript\payment.js' %}"></script>  
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<style>
+body{ 
+    padding-top: 25px;
+    margin:0;
+    padding:0;
+    background-color: black;
+    background-image: url("https://media.gettyimages.com/photos/laptop-computer-and-reciept-roll-picture-id112295348?k=6&m=112295348&s=612x612&w=0&h=TfSb24uia0ZEZiCFacinXI_o_FchLjqTWuf_xcmimxs=");
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+  .form{
+    padding-top :25px;
+      background-color: rgb(0,0,0,0.5);
+      margin:800px;
+      margin:auto;
+      text-align: center;
+      
+      border-style: solid;
+      width:30%;
+    
+    }
+  
+  form{
+    padding: 10px;
+    color:white;
+    font-family: bold;
+  font-size: large;
+  }
+  h1{
+    text-align: center;
+    color: white;
+  }
+  h2{
+    text-align: center;
+    color: white;
+  }
+  input[type="text"],input[type="number"],select{
+    background-color: whitesmoke;
+    color:whitesmoke;
+    width:80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  input[type="text"]:focus,input[type="number"]:focus,select:focus{
+    background-color:black;
+    color:white;
+
+  }
+  #accept{
+    font-size: medium;
+    margin:0;
+    padding:0;
+  }
+  .icon{
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  input[type="submit"]
+  {
+      background:aqua;
+      color:black;
+      cursor: pointer;
+      padding:15px 17px;
+      margin :2px 1px;
+      border:none;
+      border-radius:4px;
+      text-decoration:none;
+      box-shadow: #ccc;
+      text-align: center;
+  
+  }
+  input[type="submit"]:hover{
+    background:tomato;
+    width:40%;
+  }
+  
+  
+</style>
+
+</head>
+    <body>
+        <div class="form">
+        <form name="paymentform" onsubmit ="return form()" method="POST" >
+         <h1>PAYMENT</h1>
+         {% csrf_token %}
+        <label for="name">Accepted Cards</label>
+        <div class="icon">
+          <i class="fa fa-cc-visa" style="color:navy;"></i>
+          <i class="fa fa-cc-amex" style="color:blue;"></i>
+          <i class="fa fa-cc-mastercard" style="color:red;"></i>
+          <i class="fa fa-cc-discover" style="color:orange;"></i>
+        </div>
+        <label for="name"> Name on Card</label><br>
+            <input type="text"   placeholder="Name on Card" id="name" name="name"  ><br><br>
+            <label for="card">Credit Card Number</label><br>
+            <input type="number" placeholder="Credit Card Number" id="card" name="card" ><br><br>
+            <label for="month"> Expire Month</label><br>
+            <select  placeholder="Expire Month"id="expmonth" name="expmonth">
+                <option value="january"> January</option>
+                <option value="febraury"> Febraury</option>
+                <option value="march"> March</option>
+                <option value="april"> April</option>
+                <option value="may"> May</option>
+                <option value="june"> June</option>
+                <option value="july"> July</option>
+                <option value="august"> August</option>
+                <option value="september"> September</option>
+                <option value="october">October</option>
+                <option value="november"> November</option>
+                <option value="december"> December</option>
+
+            </select><br><br>
+            <label for="year">Expire Year</label><br>
+            <input type="number" placeholder="Expire Year" id="expyear" name="expyear" ><br><br>
+            <label for="cvv">CVV</label><br>
+            <input type="number" placeholder="CVV" id="cvv" name="cvv" ><br><br><br>
+            <input type="checkbox" id="accept" name="accept" value="accept">
+            <label for="accept"> accept </label><br><br>
+            <div class="submit">
+                <input   method="POST" type="submit" value="PAY" >
+            </div><br><br>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    background: url("https://media.gettyimages.com/photos/food-delivery-during-quarantine-picture-id1217134622?k=6&m=1217134622&s=612x612&w=0&h=-TpOLUl3LNOy7tjSVd3S2NohEb8Totm7ABV9Mi79FZI=");
+     background-repeat: no-repeat;
+   padding:100px;
+    background-size: 100% 100%;
+    background-position: center;
+   text-align: center;
+   color:rgb(27, 214, 52);
+   margin-left: 20%;
+   margin-right: 20%;
+   border-radius: 100px;
+   
+   
+}
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    text-shadow: 1px 1px darkcyan;
+}
+.c11{
+    float: left;
+    width: 30%;
+   
+    background: url("https://www.shutterstock.com/video/clip-1054779125-throwing-away-uneaten-food-home-household-waste");
+   
+    height:300px;
+    border-collapse: collapse;
+    margin:1%;
+    margin-left:3%;
+    margin-bottom: 0;
+    box-shadow: 5px 10px 8px #888888;
+
+}
+.c12{
+    float: left;
+    width: 30%;
+    
+   
+    height:300px;
+    margin:1%;
+    box-shadow: 5px 10px 8px #888888;
+    margin-bottom: 0;
+    border-collapse: collapse;
+
+}
+.c13{
+    float: left;
+    width: 30%;
+    height:300px;
+    margin:1%;
+    margin-bottom: 0;
+    box-shadow: 5px 10px 8px #888888;
+    border-collapse: collapse;
+
+}
+.c21{
+    float: left;
+    width: 30%;
+    padding: 15px;
+    height:300px;
+    text-align:center;
+    font-size: large;
+    margin:1%;
+    margin-left: 3%;
+    margin-top: 0;
+    background:rgb(193, 201, 185);
+    box-shadow: 5px 10px 8px #888888;
+    border-collapse: collapse;
+
+}
+
+.c22{
+    float: left;
+    width: 30%;
+    padding: 15px;
+    height:300px;
+    font-size: large;
+    text-align:center;
+    margin:1%;
+    margin-top: 0;
+    background:rgb(193, 201, 185);
+    box-shadow: 5px 10px 8px #888888;
+    border-collapse: collapse;
+
+}
+
+.c23{
+    float: left;
+    width: 30%;
+    padding: 15px;
+    height:300px;
+    text-align:left;
+    margin:1%;
+    font-size: large;
+    margin-top: 0;
+    background:rgb(193, 201, 185);
+    box-shadow: 5px 10px 8px #888888;
+    border-collapse: collapse;
+
+}
+
+
+
+.c31{
+    float: left;
+    width: 48%;
+    padding: 15px;
+    border-style: none;
+    height:320px;
+    text-align:left;
+    margin:1%;
+    margin-right: 0;
+    background:rgb(193, 201, 185);
+    box-shadow: 5px 10px 8px #888888
+
+}
+.c32{
+    float: left;
+    width: 48%;
+    
+    border-style:none;
+    height:320px;
+    text-align:left;
+    margin:1%;
+    margin-left: 0;
+
+   
+    box-shadow: 5px 10px 8px #888888
+
+}
+
+.c41{
+    float: left;
+    width: 48%;
+    
+    border-style: none;
+    height:320px;
+    text-align:left;
+    margin:1%;
+    margin-right: 0;
+   
+    box-shadow: 5px 10px 8px #888888
+
+}
+.c42{
+    float: left;
+    width: 48%;
+    padding: 15px;
+    border-style: none;
+    height:320px;
+    text-align:left;
+    margin:1%;
+    margin-left: 0;
+    background:rgb(193, 201, 185);
+    box-shadow: 5px 10px 8px #888888
+
+}
+.row4{
+    clear: both;
+    display: table;
+}
+a{
+    border-style:solid;
+    display: block;
+    padding:15px;
+    text-align: center;
+    margin-top: 100%;
+    margin-left: 45%;
+    margin-right: 45%;
+    border-color: chartreuse;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 1px 1px  greenyellow;
+   
+}
+a:hover{
+    color:whitesmoke;
+    background: yellowgreen;
+    cursor: pointer;
+}
+@media screen and (max-width:1020px){
+    .c11, .c12, .c13, .c21, .c22, .c23, .c31, .c32, .c41, .c42{
+        width: 100%;
+        height: 100%;
+    }
+    .c11, .c13{
+        display: none;
+    }
+}

@@ -1,0 +1,42 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--this is html page of calender-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Calendar</title>
+    <link rel="stylesheet" href="{% static 'css\Calenderstyle.css' %}" />
+  </head>
+  <body>
+    <div class="event-container">
+      <h3 class="year">2021</h3>
+{% for cal in cal %}
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">{{cal.date}}</div>
+            <div class="month">{{cal.month}}</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">{{cal.specialday}}</h3>
+
+          <div class="event-description">
+           {{cal.description}}
+          </div>
+
+          <div class="event-timing">
+             {{cal.time}}
+          </div>
+        </div>
+      </div>
+{% endfor %}
+
+     
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<html>
+  <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+body{
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/437/455/804/food-fruit-strawberries-blood-orange-wallpaper-preview.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  margin-top: 40px;
+    
+}
+h1{
+  width:800px;
+  background-color: black;
+  margin:auto;
+  color:white;
+  padding:10px 0px 10px 0px;
+  text-align: center;
+   border-radius: 15px;
+   width:40%;
+}
+.form{
+  background-color: rgb(0,0,0,0.5);
+  margin:800px;
+  margin:auto;
+  text-align: center;
+  border-style: solid;
+  
+  width:40%;
+  
+
+}
+form{
+  padding: 10px;
+}
+label{
+  color: white;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="datetime-local"],select,textarea{
+
+  background-color:rgb(231, 236, 236);
+  color: black;
+  width:80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+
+  
+  
+}
+input[type=text]:focus,input[type=email]:focus,input[type=number]:focus,input[type=datetime-local]:focus,select:focus,textarea:focus{
+    background-color:rgb(72, 240, 38);
+    border: 2px solid rgb(116, 235, 105);
+}
+input[type=text] {
+    background-color:rgb(225, 238, 238);
+    color:black;
+    background-position: 20px 20px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    text-align: center;
+
+  }
+textarea{
+    width: 80%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: rgb(224, 230, 230);
+  font-size: 16px;
+  resize: none;
+  text-align: center;
+
+}
+textarea:focus{
+    background-color:orange;
+}
+select{
+    
+        width: 80%;
+        padding: 15px 17px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(198, 219, 219);
+        text-align: center;
+      
+}
+
+input[type="submit"]
+{
+    background:seagreen;
+    color:black;
+    cursor: pointer;
+    padding:15px 17px;
+    margin :2px 1px;
+    border:none;
+    border-radius:4px;
+    text-decoration:none;
+    box-shadow: #ccc;
+    text-align: center;
+   
+
+}
+
+.submit{
+  background:white;
+    color:black;
+    cursor: pointer;
+    padding:15px 17px;
+    margin :2px 1px;
+    border:none;
+    border-radius:4px;
+    border-color: rgb(19, 230, 19);
+    text-decoration:none;
+    box-shadow: #ccc;
+    border-style: solid;
+    text-align: center;
+    width:50%; 
+    margin-left: 25%;
+    margin-left: 25%;
+}
+.submit:hover{
+  background: rgb(55, 236, 55);
+  color: white;
+}
+
+input[type="submit"]:hover{
+  background:rgba(63, 216, 16, 0.466);
+  width:40%;
+}
+
+
+  </style>
+    
+      <head>
+      </head>
+<script>
+    function validate(){
+    var fname =document.querySelector('#fname');
+    var lname =document.querySelector('#lname');
+    var email =document.querySelector('#email');
+    var phone =document.querySelector('#phone');
+    var locality =document.querySelector('#locality');
+    var  city =document.querySelector('#city');
+    var  district =document.querySelector('#district');
+    var  state =document.querySelector('#state');
+    var  pin =document.querySelector('#pin');
+   
+    if (name.value == "") { 
+            window.alert("Please enter your name."); 
+            name.focus(); 
+            return false; 
+        } 
+        if (email.value == "") { 
+            window.alert("Please enter your email."); 
+            email.focus(); 
+            return false; 
+        } 
+        if (phone.value == "") { 
+            window.alert("Please enter your phone number."); 
+            phone.focus(); 
+            return false; 
+        } 
+
+        if (locality.value == "") { 
+          window.alert("Please enter your locality."); 
+          locality.focus(); 
+          return false; 
+      } 
+
+      if (city.value == "") { 
+        window.alert("Please enter your city."); 
+        city.focus(); 
+        return false; 
+    } 
+    if (district.value == "") { 
+      window.alert("Please enter your district."); 
+      district.focus(); 
+      return false; 
+  } 
+  if (state.value == "") { 
+    window.alert("Please enter your state."); 
+    district.focus(); 
+    return false; 
+} 
+  
+
+        if (pin.value == "") { 
+            window.alert("Please enter pin ."); 
+            pin.focus(); 
+            return false; 
+        } 
+        return true; 
+    }
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    </head>
+    <body>
+    
+      <div class ="regform"><h1>GIVE FOOD DETAILS HERE</h1></div>
+        <div class="form">
+        <form action="" name="RegForm" onsubmit="return validate()" method="post">
+          {% csrf_token %}
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Phone Number</label><br>
+            <input type="number" id="phone" name="phone" pattern="[789][0-9]{9"} required> <br>
+
+
+            
+            <label for="food1">Type Of Food</label><br>
+  <select id="food1" name="food1">
+    <option value="M"> Veg Food</option>
+    <option value="F">Non-Veg Food</option>
+    <option value="U">Both</option>
+  </select><br><br>
+          
+  <label for="food2">State Of Food</label><br>
+  <select id="food2" name="food2">
+    <option value="FRO"> frozen</option>
+    <option value="FRE">fresh</option>
+    <option value="COOK">Cooked</option>
+  </select><br><br>
+
+            <label for="fooddate">Food If Cooked</label><br>
+            <input type="datetime-local" id="foodcooked" name="fooddate"><br><br>
+            <label for="foodQuantity">Food Quantity</label><br>
+            <input type="number" placeholder="like 100-200 meals" id="foodQuantity" name="foodQuantity"><br><br>
+
+<label for="foodpack">Food Package</label><br>
+  <select id="typefoodu" name="foodpack">
+    <option value="L"> Loose</option>
+    <option value="P">Packed</option>
+  </select><br><br>
+
+  <label for="locality">locality</label><br>
+  <input type="text" id="locality" name="locality"><br>
+
+  <label for="city">city</label><br>
+  <input type="text" id="city" name="city"><br>
+
+  <label for="district">district</label><br>
+  <input type="text" id="district" name="district"><br>
+
+  <label for="state">state</label><br>
+  <input type="text" id="state" name="state"><br>
+
+  <label for="pin">pin</label><br>
+  <input type="text" id="pin" name="pin"><br>
+
+
+
+  
+                <br>
+                <div class = "submit" onclick="getDis()">press here to get nearby orphanage</div>
+
+<br>
+<br>
+<br>
+  
+<div>
+  <input type="submit" onclick="validation()"  value="submit" name="submit" id="submit" method="POST"><br><br><br>
+  </div>
+        </form>
+    </body>
+</div>
+
+<script>
+  function getDis() {
+
+
+    navigator.geolocation.watchPosition(function (pos) {
+      var lat = pos.coords.latitude;
+      var lon = pos.coords.longitude;
+    /*document.getElementById("dis2").innerHTML=lat;
+    document.getElementById("dis3").innerHTML=lon;*/
+  
+      var geo2 = [17.3850,78.4867,16.5062,80.6480,28.7041,77.1025];//All orphanages locations(latitudes & longitudes)
+      var geo1 = [lat,lon];//user loc(latitudes & longitudes)
+      var distances = [];
+      var i =0;
+      var j=0;
+      while (i<6) {
+       
+          distances[j]= distanceBetween(lat,lon, geo2[i], geo2[i+1], "K")
+          j=j+1;
+     
+          i=i+2;
+        
+      } 
+  
+      var mindis=Math.min.apply(Math, distances)//get the minimum distances from minimum distances
+      var a = distances.indexOf(mindis)
+      if (mindis<100) {
+        switch (a) {
+       case 0:
+         window.alert("you are nearer to hyderabad plese donate food there");
+         //window.al
+  
+         break;
+         case 1:
+         window.alert("you are nearer to vijayawada plese donate food there");
+         break;
+         case 0:
+         window.alert("you are nearer to delhi plese donate food there");
+         break;
+  
+       default:
+         window.alert("out of our server plese donate food there");
+         break;
+     }
+    }
+     else{
+       window.alert("you are out of server (away of the 100 kms) ");
+      // window.alert(🧡💛💜💙"THANK YOU FOR YOUR KIND HEART"🧡💛💜💙 ");
+     }
+      
+     
+     document.getElementById("dis").innerHTML=distances;
+    
+    });
+  }
+  
+  
+    function distanceBetween(lat1, lon1, lat2, lon2, unit) {
+      var rlat1 = Math.PI * lat1 / 180
+      var rlat2 = Math.PI * lat2 / 180
+      var rlon1 = Math.PI * lon1 / 180
+      var rlon2 = Math.PI * lon2 / 180
+      var theta = lon1 - lon2
+      var rtheta = Math.PI * theta / 180
+      var dist = Math.sin(rlat1) * Math.sin(rlat2) + Math.cos(rlat1) * Math.cos(rlat2) * Math.cos(rtheta);
+      dist = Math.acos(dist)
+      dist = dist * 180 / Math.PI
+      dist = dist * 60 * 1.1515
+      if (unit == "K") {
+        dist = dist * 1.609344
+      }
+      if (unit == "N") {
+        dist = dist * 0.8684
+      }
+      return dist
+    }
+  </script>
+
+
+</html>
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact us</title>
+	
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			/*background-image: url(contact.jpg);*/
+			background-color: #00000045;
+			font-size: 14px;
+			color: #fff;
+		}
+		.container{
+			width: 80%;
+			margin: 50px auto;
+			background: transparent;
+		}
+		.contact-box{
+			background: #fff;
+			display: flex;
+		}
+		.contact-left{
+			flex-basis: 60%;
+			padding: 40px 60px;
+		}
+		.contact-right{
+			flex-basis: 40%;
+			padding: 40px;
+			background: #1c00b5;
+			color: #fff;
+		}
+		h1, h2{
+			margin-bottom: 10px;
+		}
+		p{
+			margin-bottom: 35px;
+		}
+		.input-row{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		   
+		}
+		.input-row .input-group{
+			flex-basis: 45%;
+		
+		}
+		input{
+			width: 100%;
+			border:none;
+			border-bottom: 1px solid #ccc;
+			outline: none;
+			padding-bottom: 5px;
+		}
+		textarea{
+			width: 100%;
+			border:1px solid #ccc;
+			outline: none;
+			padding: 10px;
+			box-sizing: border-box;
+		
+		}
+		label{
+			margin-bottom: 5px;
+			display: block;
+			color: #1c00b5;
+		}
+		button{
+			background: #1c00b5;
+			width: 100px;
+			border:none;
+			outline: none;
+			color: #fff;
+			height: 35px;
+			border-radius: 30px;
+			margin-top: 20px;
+		
+		}
+		tr td:first-child{
+			padding-right: 20px;
+		
+		}
+		tr td{
+			padding-top: 20px;
+		
+		}
+		
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>contact us</h1>
+	<p>we are here to help you and respond to your queriesas early as possible.<br> you can also get our friendly customer care service</p>
+	<div class="contact-box">
+		<div class="contact-left">
+			<h2>send your request</h2>
+			<form action="" method="POST">
+				{% csrf_token %}
+				<div class="input-row">
+					<div class="input-group">
+						<label>name</label>
+						<input type="text" placeholder="rokiando" name="name">
+					</div>
+					<div class="input-group">
+						<label>phone</label>
+						<input type="text" placeholder= "+91 9381540744" name="phone">
+					</div>
+				</div>
+				<div class="input-row">
+					<div class="input-group">
+						<label>email</label>
+						<input type="email" placeholder="rokiando@gmail.com" name="email">
+					</div>
+					<div class="input-group">
+						<label>subject</label>
+						<input type="text" placeholder="donation" name="subject">
+					</div>
+				</div>
+				<label>message</label>
+				<textarea rows="5" placeholder="your message" name="message"></textarea>
+				<button type="submit">send</button>
+			</form>
+		</div>
+		<div class="contact-right">
+			<h2>reach us</h2>
+			<table>
+				
+				<tr>
+					<td>email</td>
+					<td>rokiando@gmail.com</td>
+				</tr>
+				<tr>
+					<td>phone</td>
+					<td>9381540744</td>
+				</tr>
+				<tr>
+					<td>adress</td>
+					<td>8-12,santhi nagar,m.r.palli<br>tiruapti,chittooor, andhrapradesh</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+</body>
+</html>
