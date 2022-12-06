@@ -47,5 +47,38 @@ Python mange.py runserver
 ```
 - Now the server has began and it’s time to get into website. 
 
-Open browser and type “http://127.0.0.1:8000” in the search bar. From that point you are  on our website. 
+Open browser and type “http://127.0.0.1:8000” in the search bar. From that point you are  on our website.
 
+
+# System Specifications:  
+  
+## SOFWARE REQUIREMENT SPECIFICATION: 
+
+Operating Systems: WINDOWS 
+
+Front End: HTML, CSS, Java Script 
+
+Back End: MySQl(PostgreSQL), PYTHON ,DJANGO. 
+
+## HARDWARE SPECIFICATION:  
+
+The following are the hardware devices that will be needed for the system  
+
+- A personal computer (Core i3, 1.70GHz or higher recommendation)  
+- Minimum RAM of 2GB 
+- Uninterrupted Power Supply (UPS)  
+- Printer.  
+  
+## SOFTWARE DESCRIPTION:  
+
+- Operating System: Windows Xp, Windows 7, 8, 10 
+- Browser: Mozilla Firefox, Internet explorer, Chrome.
+- Macromedia products: Dreamweaver Photoshop flash 
+- Database tool: PostgreSQL (PgAdmin 4) 
+  
+PostgreSQL:  
+- PostgreSQL is a database server. 
+- PostgreSQL is a multi-threaded, multi-user server. 
+- PostgreSQL supports standard SQL.  
+- PostgreSQL compiles on a number of platforms. 
+- PostgreSQL is free to download and use. 
