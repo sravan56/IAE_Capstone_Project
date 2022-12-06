@@ -1,6 +1,8 @@
 # IAE_Capstone_Project
 This is the IAE_Capstone_Project is Called "Smile Foundation". Its developed in Django Python and Frontend Html & CSS
 
+The Project is in the Master Branch 
+
 ## Team Members
 
 - G Sravan Kumar
